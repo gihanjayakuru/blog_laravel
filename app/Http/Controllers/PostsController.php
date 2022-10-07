@@ -12,6 +12,10 @@ class PostsController extends Controller
     public function __construct()
     {
         $this->middleware('auth', ['except' => ['index', 'show']]);
+
+        // $this->middleware('guest', ['except' => [
+        //     'home']]);
+        
     }
     /**
      * Display a listing of the resource.
